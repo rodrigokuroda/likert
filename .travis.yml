@@ -3,3 +3,13 @@ sudo: required
 warnings_are_errors: true
 r_packages:
   - rmarkdown
+script:
+  # This command generates a release.zip file.
+  - make dist
+deploy:
+  provider: releases
+    api_key: '$GITHUB_API_KEY'
+  file: 'release.zip'
+  skip_cleanup: true
+  on:
+    tags
