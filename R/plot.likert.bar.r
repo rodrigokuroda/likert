@@ -34,6 +34,8 @@ utils::globalVariables(c('value','Group','variable','low','Item','high',
 #' @param wrap width to wrap label text for item labels
 #' @param wrap.grouping width to wrap label text for group labels.
 #' @param legend title for the legend.
+#' @param ylabel label for y axis.
+#' @param xlabel label for x axis.
 #' @param legend.position the position for the legend ("left", "right", "bottom",
 #'        "top", or two-element numeric vector).
 #' @param panel.arrange how panels for grouped likert items should be arrange.
