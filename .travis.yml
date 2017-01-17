@@ -6,7 +6,7 @@ r_packages:
 deploy:
   provider: releases
   api_key: '$GITHUB_API_KEY'
-  file: 'release.zip'
+  file: 'likert_1.3.4.tar.gz'
   skip_cleanup: true
   on:
     tags
